@@ -57,7 +57,7 @@ for i in range(epochs):
 with torch.no_grad():
     model1.eval()
 
-    y_eval = model1(x_feautres)
+    y_eval = model1(x_test)
 
-print(y_eval, y_labels)    
+print(y_eval, y_test)    
     
