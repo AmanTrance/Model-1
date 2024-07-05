@@ -54,7 +54,7 @@ for i in range(epochs):
 
     optimizer.step()
 
-with torch.inference_mode():
+with torch.no_grad():
     model1.eval()
 
     y_eval = model1(x_feautres)
