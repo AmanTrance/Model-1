@@ -38,6 +38,7 @@ print(y_eval, y_labels)
 lossfn = nn.L1Loss()
 optimizer = torch.optim.SGD(model1.parameters(),lr = 0.01)
 
+model1.train()
 
 epochs = 200
 
